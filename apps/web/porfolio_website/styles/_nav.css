@@ -1,0 +1,29 @@
+/* A style sheet, defining the styling of the navbar component. */
+@import "_variables.css";
+
+nav {
+    background-color: var(--accent-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--accent-font-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}

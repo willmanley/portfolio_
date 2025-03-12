@@ -1,0 +1,79 @@
+/* A style sheet defining global styling, for components being reused across all website pages. */
+@import url("_variables.css");
+@import url("_profile_pic.css");
+@import url("_nav.css");
+@import url("_icons.css"); /* Add the new icons stylesheet */
+
+/* Global Header Layout */
+.global-header {
+    display: flex;
+    align-items: center; /* Vertically center content within the header */
+    padding-top: 20px;   /* Space from the top of the page */
+    padding-left: 20px;  /* Space from the left of the page */
+    padding-right: 20px;
+    justify-content: flex-start;
+}
+
+/* Profile and Text Container Wrapper */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile Picture Container Styling */
+.global-header .profile-pic-container {
+    margin-right: 20px; /* Space between the profile picture and the text */
+}
+
+/* Text Container Styling for Name and Job Title */
+.global-header .text-container {
+    display: flex;
+    flex-direction: column; /* Stack name and job title vertically */
+    justify-content: center; /* Center the text vertically within its container */
+    line-height: 1; /* Reduce line height to bring elements closer */
+}
+
+/* Title and Subtitle Styling */
+.global-header h1 {
+    font-size: 42px;
+    margin: 0px 0px; /* Remove any default margin */
+    margin-bottom: 4px; /* Small space between name and title */
+}
+
+/* Navbar Styling */
+nav {
+    margin-top: 20px; /* Space between the header and the navbar */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+}
+
+main {
+    flex-grow: 1; /* Allow local content in each page to take up all of the available space. */
+}
+
+#main-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.global-footer {
+    background-color: var(--accent-color); /* Dark background for footer */
+    color: var(--accent-font-color); /* White text */
+    text-align: center; /* Center the footer text */
+    padding: 0px 0 10px 0; /* Increased bottom padding for larger icons */
+    width: 100%; /* Ensure the footer takes full width */
+    font-size: 14px; /* Adjust font size */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
