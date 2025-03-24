@@ -1,9 +1,18 @@
-# <center> Portfolio Monorepo </center>
+# <center> Portfolio </center>
 
-A *monorepo*, serving the purpose of showcasing
-personal projects: applications, libraries and scripts.
+A collection of personal projects, libraries, scripts.
 
 The project structure is as follows:
 
-...
-
+```
+├── apps/
+│   ├── cli/
+│   └── web/
+├── cicd/
+│   ├── builds/
+│   └── pipeline/
+├── infra/
+├── libs/
+└── scripts/
+    └── challenges/
+```

@@ -1,0 +1,101 @@
+<!-- An HTML template, defining the structure of the Index (Home) page. -->
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Links to CSS styling consumed by the Index (Home) page. -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <!-- Link to global script. -->
+<!--    <link rel="preload" href="scripts/global.js" as="script">-->
+<!--    <script src="scripts/global.js" defer></script>-->
+  </head>
+  <!-- Global Header (to be injected at the top of every page). -->
+  <header class="global-header">
+    <!-- Left section with profile picture and text -->
+    <div class="header-left">
+      <!-- Circular profile picture container. -->
+      <div class="profile-pic-container">
+        <img src="assets/imgs/me.jpeg" alt="William Manley" class="profile-pic" />
+      </div>
+
+      <!-- Name & Job Title text container. -->
+      <div class="text-container">
+        <h1>William Manley</h1>
+        <p>Machine Learning Engineer</p>
+        <p>MSc Mathematical Sciences</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Navbar (to be injected just below the header of every page). -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+
+  <body>
+    <!-- Global content (header) will be injected at the top -->
+<!--    <div id="global-header"></div>-->
+
+    <!-- Local page content goes here. -->
+    <main id="main-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>This is a work in progress!!!</p>
+    </main>
+
+    <!-- Global content (footer) will be injected at the bottom -->
+<!--    <div id="global-footer"></div>-->
+    <!-- Global Footer (to be injected at the bottom of every page). -->
+    <footer class="global-footer">
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+                href="https://github.com/willmanley"
+                class="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+        >
+          <img src="assets/imgs/icons/github.svg" alt="GitHub" />
+        </a>
+        <a
+                href="https://linkedin.com/in/williampmanley"
+                class="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+        >
+          <img src="assets/imgs/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a
+                href="https://upwork.com/YourUsername"
+                class="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="UpWork"
+        >
+          <img src="assets/imgs/icons/upwork.svg" alt="UpWork" />
+        </a>
+        <a
+                href="https://www.credly.com/users/william-manley.9b08b9b6"
+                class="social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Credly"
+        >
+          <img src="assets/imgs/icons/credly.svg" alt="Credly" />
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>

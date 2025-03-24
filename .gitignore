@@ -1,0 +1,25 @@
+# Blacklist everything unless explicitly whitelisted.
+*
+
+# Explicitly whitelist these directories (and all of their contents).
+!apps/
+!apps/**
+!cicd/
+!cicd/**
+!libs/terraform/
+!libs/terraform/**
+!libs/
+!libs/**
+!scripts/
+!scripts/**
+
+# Explicitly whitelist these files.
+!README.md
+!.gitignore
+!terraform.tf
+!backend.tf
+!provider.tf
+!main.tf
+
+# Blacklist .DS_Store files in any whitelisted directories.
+**/.DS_Store

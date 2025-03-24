@@ -1,0 +1,16 @@
+/* A style sheet, defining the styling of the profile picture component. */
+
+/* Profile Picture Container */
+.profile-pic-container {
+  width: 150px; /* Circle size */
+  height: 150px;
+  border-radius: 50%; /* Makes the container round */
+  overflow: hidden; /* Ensures the image stays inside the circle */
+}
+
+/* Profile Image Styling */
+.profile-pic {
+  width: 100%; /* Make the image fill the container */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
