@@ -1,5 +1,5 @@
-"""Python solution to LeetCode 200.
-"""
+"""Python solution to LeetCode 200."""
+
 import copy
 from typing import List
 
@@ -41,10 +41,7 @@ def solution(grid: List[List[int]]) -> int:
     return n_islands
 
 
-def _dfs(grid: List[List[int]],
-         row: int,
-         col: int
-         ):
+def _dfs(grid: List[List[int]], row: int, col: int):
     """An auxiliary function, performing a Depth-First Search (DFS) to
     identify and "flood" all cells belonging to the same island as the
     cell at grid[row, col].
@@ -55,7 +52,9 @@ def _dfs(grid: List[List[int]],
         col: The column index of the cell to perform the DFS at.
     """
     # ...
-    cell_index_out_of_bounds = ((row < 0 or row >= len(grid)) or (col < 0 or col >= len(grid[0])))
+    cell_index_out_of_bounds = (row < 0 or row >= len(grid)) or (
+        col < 0 or col >= len(grid[0])
+    )
 
     # If the cell being searched is out of bounds or if it does not belong to an island, the search can stop.
     if cell_index_out_of_bounds or (_cell_not_island := (grid[row][col] == 0)):
@@ -73,24 +72,13 @@ def _dfs(grid: List[List[int]],
 
 if __name__ == "__main__":
     # Test Example 1:
-    expected_example_1 = 1
-    actual_example_1 = solution(grid=[
-        [1, 1, 1, 1, 0],
-        [1, 1, 0, 1, 0],
-        [1, 1, 0, 0, 0],
-        [0, 0, 0, 0, 0]
-    ]
-    )
-    assert actual_example_1 == expected_example_1
+    example_1 = [[1, 1, 1, 1, 0], [1, 1, 0, 1, 0], [1, 1, 0, 0, 0], [0, 0, 0, 0, 0]]
+    expected_output_1 = 1
+    actual_output_1 = solution(grid=example_1)
+    assert actual_output_1 == expected_output_1
 
     # Test Example 2:
-    expected_example_2 = 3
-    actual_example_2 = solution(
-        grid = [
-            [1, 1, 0, 0, 0],
-            [1, 1, 0, 0, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 1, 1]
-        ]
-    )
-    assert actual_example_2 == expected_example_2
+    example_2 = [[1, 1, 0, 0, 0], [1, 1, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 1, 1]]
+    expected_output_2 = 3
+    actual_output_2 = solution(grid=example_2)
+    assert actual_output_2 == expected_output_2
