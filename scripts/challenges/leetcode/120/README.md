@@ -2,14 +2,16 @@
 
 Problem: https://leetcode.com/problems/triangle/description/
 
-------------------------------------------------------------------------------------------------------------------------
+---
+
 ## Problem Statement
-Given a *triangular array*, return the minimum path sum from top to bottom.
+
+Given a _triangular array_, return the minimum path sum from top to bottom.
 
 For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current
 row, you may move to either index i or index i + 1 on the next row.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Constraints
 
@@ -18,7 +20,7 @@ row, you may move to either index i or index i + 1 on the next row.
 - triangle[i].length == triangle[i - 1].length + 1
 - -$10^4$ <= triangle[i][j] <= $10^4$
 
-------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Examples
 
@@ -41,6 +43,7 @@ row, you may move to either index i or index i + 1 on the next row.
 
 <<< Expected Output: -10
 ```
-------------------------------------------------------------------------------------------------------------------------
+
+---
 
 Follow up: Could you do this using only O(n) extra space, where n is the total number of rows in the triangle?

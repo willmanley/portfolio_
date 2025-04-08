@@ -12,6 +12,8 @@
 !libs/**
 !scripts/
 !scripts/**
+!services/
+!services/**
 
 # Explicitly whitelist these files.
 !README.md
@@ -20,6 +22,8 @@
 !backend.tf
 !provider.tf
 !main.tf
+!pyproject.toml
+!uv.lock
 
 # Blacklist .DS_Store files in any whitelisted directories.
 **/.DS_Store
