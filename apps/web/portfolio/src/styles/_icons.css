@@ -1,0 +1,45 @@
+/* Social Media Icons Styling */
+.social-icons {
+  display: flex;
+  gap: 20px; /* Increased space between icons */
+  justify-content: center; /* Center icons horizontally */
+  margin-top: 15px; /* Space between footer text and icons */
+}
+
+.social-icon {
+  width: 82px; /* Increased size */
+  height: 82px; /* Increased size */
+  border-radius: 50%; /* Creates circular frame */
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure icon doesn't overflow the circular container */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
+}
+
+.social-icon img {
+  width: 64px; /* Increased size for the inner image */
+  height: 64px; /* Increased size for the inner image */
+  object-fit: contain; /* Keep aspect ratio while fitting in the container */
+  filter: brightness(0) invert(1); /* Make icons white regardless of original color */
+}
+
+/* SVG color control */
+.social-icon svg {
+  width: 48px; /* Increased size */
+  height: 48px; /* Increased size */
+  fill: white; /* Set fill color for SVGs */
+}
+
+.social-icon svg path {
+  fill: white; /* Ensure paths within SVGs are white */
+}

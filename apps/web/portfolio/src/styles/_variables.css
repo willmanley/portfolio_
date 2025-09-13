@@ -1,0 +1,11 @@
+/* A variable store for re-use of styling across multiple style sheets. */
+:root {
+  --primary-color: #f9e79f;
+  --accent-color: #303030;
+  --primary-font: Arial, sans-serif;
+  --primary-font-size: ...;
+  --primary-font-color: #000000;
+  --accent-font: ...;
+  --accent-font-size: ...;
+  --accent-font-color: #ffffff;
+}

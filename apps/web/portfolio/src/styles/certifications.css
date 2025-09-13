@@ -1,0 +1,45 @@
+/* A style sheet, defining styling for components local to the Certification page. */
+@import url("./_badges.css");
+@import url("./_variables.css");
+
+/* Section styling */
+.cert-section {
+  padding: 30px 0;
+}
+
+/* Horizontal dividers between sections */
+.section-divider {
+  border: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0px 0;
+}
+
+/* Section headings */
+.cert-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  border-left: 4px solid #0066cc;
+  padding-left: 10px;
+}
+
+/* Custom colors for each certification type */
+#aws-certs h3 {
+  border-left-color: #ff9900; /* AWS orange */
+}
+
+#terraform-certs h3 {
+  border-left-color: #7b42bc; /* HashiCorp purple */
+}
+
+#docker-certs h3 {
+  border-left-color: #0db7ed; /* Docker blue */
+}
+
+#kubernetes-certs h3 {
+  border-left-color: #326ce5; /* Kubernetes blue */
+}
+
+#tensorflow-certs h3 {
+  border-left-color: #ff6f00; /* TensorFlow orange */
+}
